@@ -1,7 +1,7 @@
 import sys
 from PyQt5.QtWidgets import QApplication, QMainWindow, QVBoxLayout, QWidget, QLineEdit, QPushButton
 from PyQt5.QtWebEngineWidgets import QWebEngineView
-from PyQt5.QtCore import QUrl  # <-- ADD THIS LINE
+from PyQt5.QtCore import QUrl
 
 class Browser(QMainWindow):
     def __init__(self):
@@ -40,4 +40,5 @@ if __name__ == "__main__":
     app = QApplication(sys.argv)
     window = Browser()
     window.show()
+
     sys.exit(app.exec_())
